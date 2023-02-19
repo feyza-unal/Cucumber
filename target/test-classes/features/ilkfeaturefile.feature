@@ -4,7 +4,6 @@ Feature: ilk feature file
     Given kullanici google gider
     When kullanici iphone için arama yapar
     Then sonuclarda iphone oldugunu dogrular
-    And close the application
 
 #  1. Her feature file, Feature: kelimesi ile başlamak zorundadır
 #  2. Her vir file da, yalnız bir Feature: kullanılabilir
