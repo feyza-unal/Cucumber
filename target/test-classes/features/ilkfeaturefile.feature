@@ -1,9 +1,18 @@
+@google_search
 Feature: ilk feature file
 
   Scenario: TC01_google_iphone_arama
     Given kullanici google gider
     When kullanici iphone için arama yapar
     Then sonuclarda iphone oldugunu dogrular
+    Then close the application
+
+  @tesla
+  Scenario: TC02_google_tesla_arama
+    Given kullanici google gider
+    When kullanici tesla için arama yapar
+    Then sonuclarda tesla oldugunu dogrular
+    Then close the application
 
 #  1. Her feature file, Feature: kelimesi ile başlamak zorundadır
 #  2. Her vir file da, yalnız bir Feature: kullanılabilir
