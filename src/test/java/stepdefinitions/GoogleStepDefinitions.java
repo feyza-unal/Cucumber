@@ -30,7 +30,6 @@ public class GoogleStepDefinitions {
     public void sonuclarda_iphone_oldugunu_dogrular() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("iphone"));
     }
-
     @Then("close the application")
     public void close_the_application() {
         Driver.closeDriver();
