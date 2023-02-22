@@ -13,6 +13,11 @@ import org.junit.runner.RunWith;
 )
 public class Runner {
 }
-//Bu sinif Test caseleri RUN etmek icin kullanilir
-//Ve konfigurasyonlar icin kullanilir
-//Runner class, features file lar ile step defitions i birbirile baglar
+
+//Runner class'inda class bodysinde hic bir sey olmaz
+//Bu sinif Test caseleri RUN etmek ve konfigurasyonlar icin kullanilir
+//Runner class, features file'lar ile step defitions'i birbirine baglar
+//@RunWith(Cucumber.class) notasyonu  runner class'ina calisma ozelligi katar.Bu notasyon old. icin
+//Cucumber framework'umuzde JUnit kullanmayi tercih ediyoruz
+
+
