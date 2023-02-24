@@ -22,7 +22,7 @@ Feature: google feature file
 #  6. Given -> Genelde ilk satirlarda, pre condition stepleri icin kullanilir
 #  7. Then -> Genelde son satirlarda, verification stepleri icin kullanilir
 #  8. And, When -> Genelde ara adimlarda baglar olarak kullanilir
-#  NOTE: Teknik olarak istenilen kelime isteniler step de kullanilabilir,
+#        NOTE: Teknik olarak istenilen kelime isteniler step de kullanilabilir,
 #        ama anlam karmasasi olmamasi icin bu adimlar takip edilir
 #  9. Belirli Scenario lari calistirmak icin cucumber tags ler kullanilir
 #  tag ler Fetuature, Scenario, Scerio Outline, Examples kelimeleri ile birlikte kullanilabilir
