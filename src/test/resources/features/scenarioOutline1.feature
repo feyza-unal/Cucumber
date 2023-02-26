@@ -14,7 +14,7 @@ Feature: arama_feature_2
       | iphone  |
       | tesla   |
       | tv      |
-      | flower  |
+      | flower   |
       | cat     |
       | dog     |
 
@@ -23,3 +23,14 @@ Feature: arama_feature_2
 #"" -> "<sutun_ismi>"
 #Example kelimesi Scenario Outline dan sonra kullanilmali
 #Example verilerin kullanildagi yerdir
+
+
+#Scenario Outline: eating
+#  Given there are <start> cucumbers
+#  When I eat <eat> cucumbers
+#  Then I should have <left> cucumbers
+#
+#  Examples:
+#    | start | eat | left |
+#    |    12 |   5 |    7 |
+#    |    20 |   5 |   15 |
