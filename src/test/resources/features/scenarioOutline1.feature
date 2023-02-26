@@ -1,5 +1,6 @@
 @scenario_outline_1
 Feature: arama_feature_2
+
   Background: Google_sayfasina_git
     Given kullanici google gider
 
