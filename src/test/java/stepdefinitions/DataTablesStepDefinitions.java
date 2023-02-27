@@ -1,7 +1,9 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import pages.DataTablesPage;
 import utilities.Driver;
 public class DataTablesStepDefinitions {
@@ -10,6 +12,7 @@ public class DataTablesStepDefinitions {
     public void kullanici_gider(String string) {
         Driver.getDriver().get(string);
     }
+
     @When("kullanici new butonuna tiklar")
     public void kullanici_new_butonuna_tiklar() {
 //        dataTablesPage.newButon.click();
@@ -47,5 +50,16 @@ public class DataTablesStepDefinitions {
     @When("kullanici create buttonuna basar")
     public void kullanici_create_buttonuna_basar() {
         dataTablesPage.create.click();
+    }
+
+    @When("kullanici firstname ile {string} arar")
+    public void kullanici_firstname_ile_arar(String string) {
+        dataTablesPage.search.sendKeys(string);
+    }
+    @Then("firstname {string} in olustugunu test et")
+    public void firstname_in_olustugunu_test_et(String string) {
+        Driver.wait(1);
+        Assert.assertTrue(Driver.waitAndGetText(dataTablesPage.name,5).contains(string));
+//        Assert.assertTrue(dataTablesPage.name.getText().contains(string));
     }
 }
