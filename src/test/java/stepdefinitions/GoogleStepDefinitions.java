@@ -51,5 +51,8 @@ public class GoogleStepDefinitions {
     @Then("sonuclarin {string} icerdigini dogrula")
     public void sonuclarin_icerdigini_dogrula(String string) {
         Assert.assertTrue(Driver.getDriver().getPageSource().contains(string));
+
     }
+
+
 }
