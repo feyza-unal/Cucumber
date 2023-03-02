@@ -12,7 +12,6 @@ public class DataTablesStepDefinitions {
     public void kullanici_gider(String string) {
         Driver.getDriver().get(string);
     }
-
     @When("kullanici new butonuna tiklar")
     public void kullanici_new_butonuna_tiklar() {
 //        dataTablesPage.newButon.click();
@@ -51,7 +50,6 @@ public class DataTablesStepDefinitions {
     public void kullanici_create_buttonuna_basar() {
         dataTablesPage.create.click();
     }
-
     @When("kullanici firstname ile {string} arar")
     public void kullanici_firstname_ile_arar(String string) {
         dataTablesPage.search.sendKeys(string);
