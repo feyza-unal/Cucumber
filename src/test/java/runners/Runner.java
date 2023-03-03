@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         monochrome=true, //raporlarin consolda okunakli olmasi
         features = "./src/test/resources/features",//features folder path
         glue = "stepdefinitions",   //stepdefinitions path
-        tags = "@personel_olusturma",
-        dryRun = false
+        tags = "@data_tables",
+        dryRun = true
 
 )
 public class Runner {

@@ -14,7 +14,7 @@ Feature: personel_olusturma
    And kullanici create buttonuna basar
    When kullanici firstname ile "<firstname>" arar
    Then firstname "<firstname>" in olustugunu test et
-   #Then close the application
+   Then close the application
 
 
 
