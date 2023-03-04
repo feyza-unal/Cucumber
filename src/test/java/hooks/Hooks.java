@@ -19,7 +19,7 @@ public class Hooks {
     }
     @After
     public void tearDownScenarios(Scenario scenario){
-        System.out.println("Afher Metotu");
+        System.out.println("After Metotu");
 //        Eger bir Scenario FAIL ederse, ekran goruntusunu al ve rapora ekle
         if (scenario.isFailed()) {
             final byte[] failedScreenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);

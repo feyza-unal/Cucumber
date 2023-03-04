@@ -13,9 +13,9 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml" },
         monochrome=true, //raporlarin consolda okunakli olmasi
         features = "./src/test/resources/features",//features folder path
-        glue = "stepdefinitions",   //stepdefinitions path
-        tags = "@data_tables",
-        dryRun = true
+        glue = {"stepdefinitions","hooks"},   //stepdefinitions path
+        tags = "@failed_scenario",
+        dryRun = false
 
 )
 public class Runner {
