@@ -1,4 +1,4 @@
-@personel_olusturma
+@personel_olusturma @testrunner
 Feature: personel_olusturma
  Scenario Outline: TC01_personel_olustur
 

@@ -9,16 +9,18 @@ Feature:arama_feature
     Then sonuclarin "iphone" icerdigini dogrula
     Then close the application
 
+@smoke
   Scenario: TC02_google_tesla_arama
     When kullanici "tesla" için arama yapar
     Then sonuclarin "tesla" icerdigini dogrula
     Then close the application
 
+  @regression
   Scenario: TC03_google_water_arama
     When kullanici "water" için arama yapar
     Then sonuclarin "water" icerdigini dogrula
     Then close the application
-
+@testrunner
   Scenario: TC04_google_tea_pot_arama
     When kullanici "porcelain tea pot" için arama yapar
     Then sonuclarin "porcelain tea pot" icerdigini dogrula

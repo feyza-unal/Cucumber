@@ -1,4 +1,4 @@
-@scenario_outline_1
+@scenario_outline_1 @smoke
 Feature: arama_feature_2
 
   Background: Google_sayfasina_git
