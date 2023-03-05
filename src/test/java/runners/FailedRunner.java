@@ -14,19 +14,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/failed_scenarios.txt"
         },
         monochrome=true, //raporlarin consolda okunakli olmasi
-        features = "./src/test/resources/features",//features folder path
+        features = "@target/failed_scenarios.txt",//txt folder path
         glue = {"stepdefinitions","hooks"},   //stepdefinitions path
-        tags = "@failed_scenario",
         dryRun = false
 
 )
-public class Runner {
+public class FailedRunner {
 }
-
-//Runner class'inda class bodysinde hic bir sey olmaz
-//Bu sinif Test caseleri RUN etmek ve konfigurasyonlar icin kullanilir
-//Runner class, features file'lar ile step defitions'i birbirine baglar
-//@RunWith(Cucumber.class) notasyonu  runner class'ina calisma ozelligi katar.Bu notasyon old. icin
-//Cucumber framework'umuzde JUnit kullanmayi tercih ediyoruz
-
-
